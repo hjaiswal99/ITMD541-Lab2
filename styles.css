@@ -64,7 +64,10 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
-
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 100px 100px;
+	grid-gap: 20px;
 }
 
 /* end Grid Part 1 */
@@ -73,7 +76,9 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-
+	grid-column: 2/4;
+	grid-row: 1/4;
+	order: 1;
 }
 
 #grid-section2 .gridboxred {
